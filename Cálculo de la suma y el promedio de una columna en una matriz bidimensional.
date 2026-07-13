@@ -1,0 +1,23 @@
+Algoritmo llenar_matriz
+	Dimensionar notas[3,2]
+	definir i, j, suma, promedio Como real
+	//pedir las notas
+	para i = 1 hasta 3 Con Paso 1 Hacer
+		para j = 1 hasta 2 Con Paso 1 Hacer
+			Escribir "ingrese la nota del alumno ", i, " en el curso ",j," : "
+			leer notas[i,j]
+		FinPara
+	FinPara
+	//sumar las notas del curso 2 (columna 2)
+	suma = 0
+	//bucle para sumar las notas de 3 alumnos
+	para i = 1 hasta 3 Hacer
+		//sumamos las notas i(todas) del curso 2
+		suma = suma + notas[i,2]
+	FinPara
+	
+	promedio = 0
+	promedio = suma / 3
+	escribir "el promedio de su nota es: ", promedio
+	escribir "la suma de sus notas es : ", suma
+FinAlgoritmo
