@@ -1,0 +1,20 @@
+Algoritmo llenar_matriz
+	Dimensionar notas[3,2]
+	definir i, j Como real
+	//pedir las notas
+	para i = 1 hasta 3 Con Paso 1 Hacer
+		para j = 1 hasta 2 Con Paso 1 Hacer
+			Escribir "ingrese la nota del alumno ", i, " en el curso ",j," : "
+			leer notas[i,j]
+		FinPara
+	FinPara
+	//mostrar las notas
+	para i = 1 hasta 3 con paso 1 Hacer
+		para j = 1 hasta 2 con paso 1 Hacer
+			// para que no baje de una y aparezcan las 2 notas en una misma linea
+			escribir Sin Saltar notas[i,j], ""
+		FinPara
+		//para cambiar de fila
+		escribir ""
+	FinPara
+FinAlgoritmo
