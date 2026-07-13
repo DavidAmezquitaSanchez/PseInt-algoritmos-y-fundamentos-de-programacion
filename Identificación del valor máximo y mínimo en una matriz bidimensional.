@@ -1,0 +1,31 @@
+Algoritmo llenar_matriz
+	Dimensionar notas[3,2]
+	definir i, j, suma, promedio Como real
+	//pedir las notas
+	para i = 1 hasta 3 Con Paso 1 Hacer
+		para j = 1 hasta 2 Con Paso 1 Hacer
+			Escribir "ingrese la nota del alumno ", i, " en el curso ",j," : "
+			leer notas[i,j]
+		FinPara
+	FinPara
+	//TOMAMOS LAS NOTAS 1,1 como mayor y menor y que compare
+	mayorr = notas[1,1]
+	menorr = notas[1,1]
+	
+	//dentro del bucle anidado
+	para i = 1 hasta 3 Hacer
+		para j = 1 Hasta 2 Hacer
+			//si la siguiente nota es mayor a la primera, cambia
+			si notas[i,j] > mayorr Entonces
+				mayorr = notas[i,j]
+			FinSi
+			//si la siguiente nota es menor a la primera cambia a este
+			si notas[i,j] < menorr Entonces
+				menorr = notas[i,j]
+			FinSi
+		FinPara
+	FinPara
+	
+	escribir "el numero menor es: ", menorr
+	escribir "el numero mayor es: ", mayorr
+FinAlgoritmo
