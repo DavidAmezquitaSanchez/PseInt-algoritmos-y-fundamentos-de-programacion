@@ -1,0 +1,23 @@
+Algoritmo llenar_matriz
+	Dimensionar notas[3,2]
+	definir i, j, contador Como real
+	//pedir las notas
+	para i = 1 hasta 3 Con Paso 1 Hacer
+		para j = 1 hasta 2 Con Paso 1 Hacer
+			Escribir "ingrese la nota del alumno ", i, " en el curso ",j," : "
+			leer notas[i,j]
+		FinPara
+	FinPara
+	//mostrar promedios por  alumno
+	para i=1 hasta 3 Hacer
+		//reinicia el contador para cada alumno
+		suma = 0
+		//suma las notas de tal alumno
+		para j = 1 hasta 2 Hacer
+			suma = suma + notas[i,j]
+		FinPara
+		//saca el promedio del cada alumno
+		promedio = suma / 3
+		escribir "El promedio del amuno ",i, " : ", promedio
+	FinPara
+FinAlgoritmo
